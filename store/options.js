@@ -2,7 +2,6 @@ import { make } from 'vuex-pathify'
 
 const defaultState = () => ({
   sidebarIsOpen: false,
-  sidebarIsLocked: false,
 })
 
 export default {
