@@ -1,4 +1,4 @@
-a<template>
+<template>
   <div
     class="left-sidebar bg-gray-800 fixed w-56 h-screen mt-16 pt-6"
     :class="{ collapse: collapseSidebar }"
