@@ -52,11 +52,11 @@
 </template>
 
 <script>
+import { get } from 'vuex-pathify'
 export default {
   name: 'Sidebar2',
   data() {
     return {
-      collapseSidebar: false,
       sidebarLocked: false,
       windowWidth: window.innerWidth,
       txt: '',
@@ -65,6 +65,9 @@ export default {
         role: 'Product Engineer',
       },
     }
+  },
+  computed: {
+    collapseSidebar: get('options/sidebarIsOpen'),
   },
   watch: {
     windowWidth(n) {
