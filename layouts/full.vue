@@ -1,19 +1,18 @@
 <template>
-  <div>
+  <div class="full-layout">
     <sidebar />
     <navbar />
-    <div class="md:ml-56 ml-24 md:py-24 py-20 px-8 bg-gray-200">
-      <Nuxt />
-    </div>
+    <page-content />
   </div>
 </template>
 
 <script>
 import Sidebar from '~/components/layouts/sidebar2'
 import Navbar from '~/components/layouts/navbar'
+import PageContent from '~/components/layouts/content'
 export default {
   name: 'FullLayout',
-  components: { Sidebar, Navbar },
+  components: { Sidebar, Navbar, PageContent },
 }
 </script>
 

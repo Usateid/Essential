@@ -53,7 +53,7 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faLock', 'faBookOpen', 'faChevronDown'],
+      solid: ['faLock', 'faBookOpen', 'faChevronDown', 'faAlignJustify'],
       brands: [],
     },
   },
