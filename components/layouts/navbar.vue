@@ -1,6 +1,9 @@
 <template>
   <div class="flex fixed w-full h-16 bg-blue-600 border-b border-black">
-    <button class="ml-4">open/close</button>
+    <div class="flex items-center w-56 justify-between px-6">
+      <h2 class="text-2xl">Logo here</h2>
+      <fa class="ml-2" icon="align-justify" />
+    </div>
   </div>
 </template>
 
