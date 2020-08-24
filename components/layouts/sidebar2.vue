@@ -1,4 +1,4 @@
-a<template>
+<template>
   <div
     class="left-sidebar bg-gray-800 fixed w-56 h-screen mt-16 pt-6"
     :class="{ collapse: collapseSidebar }"
@@ -18,7 +18,7 @@ a<template>
       </div>
     </div>
     <hr class="border-gray-400 mx-4 my-8" />
-    <div class="submenu-navbar flex flex-col font-bold">
+    <div class="submenu-sidebar flex flex-col font-bold">
       <div v-if="!collapseSidebar" class="text-white ml-4 mb-4">General</div>
       <nuxt-link
         class="submenu-item flex items-center pl-4 py-2 hover:bg-gray-600 text-gray-600 hover:text-white"
@@ -84,13 +84,13 @@ export default {
   box-shadow: 5px 10px 18px #888888;
 }
 .collapse {
-  &.left-navbar {
+  &.left-sidebar {
     @apply w-16;
   }
   .user-picture {
     @apply h-8 w-8;
   }
-  .submenu-navbar {
+  .submenu-sidebar {
     @apply mx-0 items-center;
     .submenu-item {
       @apply pl-0 w-full justify-center;
