@@ -1,9 +1,9 @@
 <template>
   <div
-    class="left-sidebar bg-gray-800 fixed w-56 h-screen mt-16 pt-6"
+    class="left-sidebar bg-gray-800 fixed w-56 h-screen mt-12 pt-6"
     :class="{ collapse: openSidebar }"
   >
-    <div class="flex flex-col items-center">
+    <!-- <div class="flex flex-col items-center">
       <img
         class="user-picture h-24 w-24 rounded-full border border-black"
         src="~/assets/img/avatar.jpg"
@@ -18,8 +18,8 @@
 
         <div>{{ user.role }}</div>
       </div>
-    </div>
-    <hr class="border-gray-400 mx-4 my-8" />
+    </div> -->
+    <!-- <hr class="border-gray-400 mx-4 my-8" /> -->
     <div class="submenu-sidebar flex flex-col font-bold">
       <div class="smooth-transition text-white ml-4 mb-4">General</div>
       <nuxt-link
