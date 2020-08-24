@@ -1,6 +1,6 @@
 <template>
   <div
-    class="page-content md:ml-56 ml-16 md:py-24 py-20 px-8 bg-gray-200"
+    class="page-content md:ml-56 ml-16 md:py-24 py-20 px-8 bg-gray-500"
     :class="{ collapse: sidebarIsOpen }"
   >
     <Nuxt />
