@@ -1,6 +1,6 @@
 <template>
   <div
-    class="left-sidebar bg-gray-800 fixed w-56 h-screen mt-12 pt-6"
+    class="left-sidebar bg-gray-800 fixed w-56 h-full mt-12 pt-6"
     :class="{ collapse: openSidebar }"
   >
     <!-- <div class="flex flex-col items-center">
