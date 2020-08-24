@@ -77,7 +77,8 @@
 <script>
 import { sync } from 'vuex-pathify'
 export default {
-  name: 'Cazzetto',
+  name: 'Navbar',
+
   data() {
     return {
       notify: 0,
