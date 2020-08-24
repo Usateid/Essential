@@ -21,13 +21,13 @@
       <div class="flex items-center mx-4">
         <fa :icon="notifyIcon" />
       </div>
-      <div class="items-center border-l px-4 hidden md:flex">
+      <div class="items-center border-l px-4 flex">
         <img
           class="user-picture h-8 w-8 rounded-full border border-black"
           src="~/assets/img/avatar.jpg"
         />
         <div class="flex items-center">
-          <span class="ml-2">{{ user.name }} </span>
+          <span class="ml-2 hidden md:flex">{{ user.name }} </span>
           <fa class="h-3 ml-2" icon="chevron-down" />
         </div>
       </div>
@@ -82,7 +82,7 @@ export default {
     return {
       notify: 0,
       user: {
-        name: 'Erin Lindford',
+        name: 'Polenghi Massimiliano Franchetti',
         role: 'Product Engineer',
       },
     }

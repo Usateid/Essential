@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .page-content {
+  min-height: 100vh;
   transition: 0.7s;
   &.collapse {
     @apply ml-16;
