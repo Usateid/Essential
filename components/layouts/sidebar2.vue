@@ -95,7 +95,6 @@ export default {
 }
 .left-sidebar {
   transition: width 0.7s;
-  box-shadow: 5px 10px 18px #888888;
   .user-picture {
     transition: 0.7s;
   }
