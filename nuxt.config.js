@@ -68,6 +68,8 @@ export default {
         'faEnvelope',
         'faEnvelopeOpen',
         'faPaperclip',
+        'faUser',
+        'faSignOutAlt',
       ],
       brands: [],
     },
