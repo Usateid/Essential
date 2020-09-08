@@ -1,29 +1,33 @@
 <template>
-  <div
-    class="navbar w-full flex flex-row items-center h-12 fixed justify-between shadow-xs"
-  >
-    <div class="navbar-left flex flex-row-reverse md:flex-row">
-      <div class="w-56 justify-center text-lg text-gray-700 flex md:border-r">
-        My Website
+  <div class="fixed w-full navbar h-16 flex justify-between items-center px-8">
+    <div class="flex">
+      <div class="md:px-2 px-4 py-2" @click="sidebarIsOpen = !sidebarIsOpen">
+        <fa
+          :icon="!sidebarIsOpen ? 'align-justify' : 'angle-double-left'"
+          class="text-white"
+        />
       </div>
-      <div
-        class="w-16 md:w-auto md:ml-4 justify-center flex items-center border-r md:border-none"
-      >
-        <div @click="sidebarIsOpen = !sidebarIsOpen">
-          <fa icon="align-justify" />
-        </div>
+      <div class="hidden md:flex px-4 py-2">
+        <fa icon="search" class="text-white" />
       </div>
     </div>
-    <div class="navbar-right flex">
-      <div class="flex items-center mx-4">
-        <fa icon="paperclip" />
+    <div>
+      <img class="h-16 w-16" src="~/assets/img/pizza_melting.png" />
+    </div>
+    <div class="flex md:hidden px-2">
+      <div>
+        <fa icon="paperclip" class="text-white" />
       </div>
-      <div class="flex items-center mx-4">
-        <fa :icon="notifyIcon" />
+    </div>
+    <div class="hidden md:flex">
+      <div>
+        <fa icon="paperclip" class="text-white" />
       </div>
-      <navbar-user-section />
-      <div class="border-l w-16 flex items-center justify-center">
-        <fa icon="cogs" />
+      <div class="ml-10">
+        <fa :icon="notifyIcon" class="text-white" />
+      </div>
+      <div class="ml-10">
+        <fa icon="cogs" class="text-white" />
       </div>
     </div>
   </div>
@@ -31,12 +35,7 @@
 
 <script>
 import { sync } from 'vuex-pathify'
-import NavbarUserSection from '~/components/layouts/navbar/user'
 export default {
-  name: 'Navbar',
-  components: {
-    NavbarUserSection,
-  },
   data() {
     return {
       notify: 0,
@@ -53,9 +52,6 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  background-color: #3e8ef7;
-  .logo-section {
-    background-color: #90cdf4;
-  }
+  background-color: #1c7af6;
 }
 </style>

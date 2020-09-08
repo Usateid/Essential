@@ -1,6 +1,6 @@
 <template>
   <div
-    class="left-sidebar block fixed h-full mt-16 bg-white border-r"
+    class="left-sidebar block fixed h-full md:mt-8 mt-16 bg-white border-r"
     :class="{ open: sidebarIsOpen }"
   >
     <nav class="mt-4">
