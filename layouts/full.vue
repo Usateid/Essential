@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Sidebar from '~/components/layouts/sidebar2'
-import Navbar from '~/components/layouts/navbar'
+import Sidebar from '~/components/layouts/sidebar/index'
+import Navbar from '~/components/layouts/navbar/new.vue'
 import PageContent from '~/components/layouts/content'
 export default {
   name: 'FullLayout',

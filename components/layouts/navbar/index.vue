@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex flex-row items-center h-12 fixed justify-between bg-white shadow-xs"
+    class="navbar w-full flex flex-row items-center h-12 fixed justify-between shadow-xs"
   >
     <div class="navbar-left flex flex-row-reverse md:flex-row">
       <div class="w-56 justify-center text-lg text-gray-700 flex md:border-r">
@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  background-color: #a6d7f6;
+  background-color: #3e8ef7;
   .logo-section {
     background-color: #90cdf4;
   }

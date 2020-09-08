@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="page-content md:ml-56 ml-16 md:py-24 py-20 px-8 bg-gray-500"
-    :class="{ collapse: sidebarIsOpen }"
-  >
+  <div class="page-content md:py-24 py-20 px-8">
     <Nuxt />
   </div>
 </template>
@@ -19,10 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 .page-content {
+  background-color: #f1f4f5;
   min-height: 100vh;
-  transition: 0.7s;
-  &.collapse {
-    @apply ml-16;
-  }
 }
 </style>

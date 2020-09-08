@@ -5,7 +5,7 @@
       src="~/assets/img/avatar.jpg"
     />
     <div class="flex items-center">
-      <span class="ml-2 hidden md:flex">{{ user.name }} </span>
+      <!-- <span class="ml-2 hidden md:flex">{{ user.name }} </span> -->
       <div class="relative group inline-block">
         <button
           class="outline-none focus:outline-none px-3 py-1 rounded-sm flex items-center"

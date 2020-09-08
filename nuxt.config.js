@@ -70,6 +70,7 @@ export default {
         'faPaperclip',
         'faUser',
         'faSignOutAlt',
+        'faAngleDoubleLeft',
       ],
       brands: [],
     },
